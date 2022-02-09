@@ -38,10 +38,10 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button_tambah_menu"
+            android:id="@+id/button_tambah_restoran"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="47dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="25dp"
             android:backgroundTint="#FFFFFF"
             android:text="Tambah Restoran"
@@ -50,6 +50,19 @@
             app:cornerRadius="25dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_tambah_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Tambah Menu"
+            android:textColor="#B6B6B6"
+            android:textSize="11sp"
+            app:cornerRadius="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_tambah_restoran" />
 
         <TextView
             android:id="@+id/text_view_restoran_empty"

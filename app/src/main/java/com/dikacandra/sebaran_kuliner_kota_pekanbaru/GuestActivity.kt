@@ -7,22 +7,21 @@ import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dikacandra.sebaran_kuliner_kota_pekanbaru.db.KulinerRoomDatabase
 import com.dikacandra.sebaran_kuliner_kota_pekanbaru.model.Restoran
+import kotlinx.android.synthetic.main.activity_guest.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.recycler_view_main
+import kotlinx.android.synthetic.main.activity_main.text_view_restoran_empty
 
-class MainActivity : AppCompatActivity() {
+class GuestActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_guest)
 
         getRestoranData()
 
-        button_tambah_restoran.setOnClickListener {
+        button_login.setOnClickListener {
             startActivity(Intent(this, EditActivity::class.java))
-        }
-
-        button_tambah_menu.setOnClickListener {
-            startActivity(Intent(this, EditMenuActivity::class.java))
         }
 
     }
@@ -45,13 +44,13 @@ class MainActivity : AppCompatActivity() {
         recycler_view_main.apply {
             adapter = KulinerAdapter(listItems, object : KulinerAdapter.RestoranListener{
                 override fun OnItemClicked(restoran: Restoran) {
-                    val intent = Intent(this@MainActivity, EditActivity::class.java)
+                    val intent = Intent(this@GuestActivity, EditActivity::class.java)
                     intent.putExtra(EditActivity().EDIT_RESTORAN_EXTRA, restoran)
                     startActivity(intent)
                 }
             })
 
-            layoutManager = LinearLayoutManager(this@MainActivity)
+            layoutManager = LinearLayoutManager(this@GuestActivity)
         }
     }
 

@@ -5,7 +5,10 @@
       <map>
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/sebarankulinerkotapekanbaru/app/src/main/res/drawable/ic_add_white_24dp.xml" value="0.3828125" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/sebarankulinerkotapekanbaru/app/src/main/res/drawable/ic_hero_cover.xml" value="0.3828125" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/sebarankulinerkotapekanbaru/app/src/main/res/layout/activity_detail_restoran.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/sebarankulinerkotapekanbaru/app/src/main/res/layout/activity_edit.xml" value="0.25" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/sebarankulinerkotapekanbaru/app/src/main/res/layout/activity_edit_menu.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/Administrator/AndroidStudioProjects/sebarankulinerkotapekanbaru/app/src/main/res/layout/activity_guest.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/sebarankulinerkotapekanbaru/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/sebarankulinerkotapekanbaru/app/src/main/res/layout/list_item.xml" value="0.33" />
       </map>

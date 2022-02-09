@@ -2,7 +2,6 @@ package com.dikacandra.sebaran_kuliner_kota_pekanbaru
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.dikacandra.sebaran_kuliner_kota_pekanbaru.db.KulinerRoomDatabase

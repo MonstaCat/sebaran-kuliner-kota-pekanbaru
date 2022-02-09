@@ -4,10 +4,11 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.dikacandra.sebaran_kuliner_kota_pekanbaru.model.Menu
 import com.dikacandra.sebaran_kuliner_kota_pekanbaru.model.Restoran
 
 //Database annotation to specify the entities and set version
-@Database(entities = [Restoran::class], version = 1, exportSchema = false)
+@Database(entities = [Restoran::class, Menu::class], version = 2, exportSchema = false)
 abstract class KulinerRoomDatabase : RoomDatabase() {
 
     companion object {
@@ -33,4 +34,5 @@ abstract class KulinerRoomDatabase : RoomDatabase() {
     }
 
     abstract fun getRestoranDao() : RestoranDao
+    abstract fun getMenuDao() : MenuDao
 }

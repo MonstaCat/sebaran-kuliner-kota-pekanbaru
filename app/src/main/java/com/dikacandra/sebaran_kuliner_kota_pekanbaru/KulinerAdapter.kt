@@ -31,7 +31,7 @@ class KulinerAdapter (
         }
 
         class RestoranViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-            var textViewNamaRestoran = itemView.findViewById<TextView>(R.id.text_view_restoran_empty)
+            var textViewNamaRestoran = itemView.findViewById<TextView>(R.id.text_view_namaRestoran)
             var textViewLokasi = itemView.findViewById<TextView>(R.id.text_view_lokasi)
         }
 

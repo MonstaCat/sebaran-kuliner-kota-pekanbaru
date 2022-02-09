@@ -44,8 +44,8 @@ class GuestActivity : AppCompatActivity() {
         recycler_view_main.apply {
             adapter = KulinerAdapter(listItems, object : KulinerAdapter.RestoranListener{
                 override fun OnItemClicked(restoran: Restoran) {
-                    val intent = Intent(this@GuestActivity, EditActivity::class.java)
-                    intent.putExtra(EditActivity().EDIT_RESTORAN_EXTRA, restoran)
+                    val intent = Intent(this@GuestActivity, DetailRestoranActivity::class.java)
+                    intent.putExtra(DetailRestoranActivity().EDIT_MENU_EXTRA, restoran)
                     startActivity(intent)
                 }
             })

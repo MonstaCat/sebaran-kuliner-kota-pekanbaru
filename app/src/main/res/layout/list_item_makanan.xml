@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/card_view_item"
+    android:id="@+id/card_view_item_makanan"
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:layout_marginStart="16dp"
@@ -12,29 +12,40 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="8dp">
 
         <TextView
-            android:id="@+id/text_view_namaRestoran"
+            android:id="@+id/text_view_namaMakanan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nunito_bold"
-            android:text="Restoran Title"
+            android:text="Menu Title"
             android:textColor="#333333"
             android:textSize="17sp"
             android:textStyle="bold"
             android:paddingBottom="5sp" />
 
         <TextView
-            android:id="@+id/text_view_lokasi"
+            android:id="@+id/text_harga"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="5dp"
             android:ellipsize="end"
-            android:fontFamily="sans-serif"
-            android:text="@string/lorem"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Rp10.000"
+            android:textColor="#911F27"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/text_jenis_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Gulai"
             android:textColor="#333333"
             android:textSize="12sp" />
 

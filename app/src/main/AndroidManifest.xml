@@ -13,7 +13,7 @@
             android:name=".DetailRestoranActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".GuestActivity"
             android:exported="false" />
         <activity
             android:name=".EditMenuActivity"
@@ -22,7 +22,7 @@
             android:name=".EditActivity"
             android:exported="false" />
         <activity
-            android:name=".GuestActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

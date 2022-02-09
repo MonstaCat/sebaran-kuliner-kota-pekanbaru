@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         getRestoranData()
 
-        floatingActionButton.setOnClickListener {
+        button_tambah_menu.setOnClickListener {
             startActivity(Intent(this, EditActivity::class.java))
         }
 

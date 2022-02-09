@@ -8,8 +8,7 @@
     android:paddingBottom="8dp"
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
-    tools:context=".EditActivity"
-    >
+    tools:context=".EditActivity" >
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_input_layout_namaRestoran"
@@ -18,19 +17,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:hint="Title"
-        >
+        android:hint="Nama Restoran" >
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_namaRestoran"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:inputType="textCapWords"
-            />
+            android:inputType="textCapWords" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -40,7 +37,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
 
-        android:hint="Body"
+        android:hint="Link Lokasi Gmaps"
         app:layout_constraintBottom_toTopOf="@+id/button_save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +46,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_lokasi"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:inputType="textMultiLine|textCapSentences"
             app:layout_constraintEnd_toEndOf="parent"

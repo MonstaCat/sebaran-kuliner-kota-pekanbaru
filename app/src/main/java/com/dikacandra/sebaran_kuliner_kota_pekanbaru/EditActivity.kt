@@ -31,7 +31,7 @@ class EditActivity : AppCompatActivity() {
             isUpdate = true
             restoran = intent.getParcelableExtra(EDIT_RESTORAN_EXTRA)!!
             edit_text_namaRestoran.setText(restoran.namaRestoran)
-            edit_text_namaRestoran.setText(restoran.lokasi)
+            edit_text_lokasi.setText(restoran.lokasi)
 
             edit_text_namaRestoran.setSelection(restoran.namaRestoran.length)
 
